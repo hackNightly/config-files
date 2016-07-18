@@ -14,6 +14,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'rust-lang/rust.vim'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'flazz/vim-colorschemes'
+Plugin 'davejlong/cf-utils.vim'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -35,6 +36,7 @@ colorscheme ChocolateLiquor
 set tabstop=4
 set shiftwidth=4
 set smartindent
+
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
 set history=50		" keep 50 lines of command line history
