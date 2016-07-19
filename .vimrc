@@ -35,7 +35,6 @@ map <F9> :NERDTreeFind<CR>
 let g:ctrlp_custom_ignore = '\v[\/](node_modules)$'
 set t_Co=256
 set term=xterm-256color
-colorscheme ChocolateLiquor
 set tabstop=4
 set shiftwidth=4
 set smartindent
