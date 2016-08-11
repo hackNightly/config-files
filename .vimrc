@@ -17,7 +17,7 @@ Plugin 'flazz/vim-colorschemes'
 Plugin 'davejlong/cf-utils.vim'
 Plugin 'rking/ag.vim'
 Plugin 'fatih/vim-go'
-
+Plugin 'leafgarland/typescript-vim'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -28,17 +28,19 @@ set undodir=~/.vim/.undo//
 set backupdir=~/.vim/.backup//
 set directory=~/.vim/.swp//
 map <C-k><C-b> :NERDTreeToggle<CR>
-let NERDTreeIgnore = ['node_modules$']
 map <F7> :tabp<CR>
 map <F8> :tabn<CR>
 map <F9> :NERDTreeFind<CR>
-let g:ctrlp_custom_ignore = '\v[\/](node_modules)$'
+map <C-Right> :tabn<CR>
+map <C-Left> :tabp<CR>
+let g:ctrlp_custom_ignore = '\v[\/](node_modules|vendor)$'
 set t_Co=256
 set term=xterm-256color
+colorscheme fu 
 set tabstop=4
 set shiftwidth=4
 set smartindent
-
+set number
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
 set history=50		" keep 50 lines of command line history
